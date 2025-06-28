@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BGMI Free UC Redeem (Fake Demo)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1d1f27;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+    .container {
+      background-color: #2c2f38;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      max-width: 500px;
+      margin: auto;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      width: 80%;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #f39c12;
+      color: white;
+      cursor: pointer;
+    }
+    .note {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>BGMI Free UC Redeem</h1>
+  <p>Enter your BGMI ID to claim 10,000 UC!</p>
+  <input type="text" placeholder="Enter your BGMI ID" id="bgmiID">
+  <br>
+  <button onclick="redeemUC()">Redeem</button>
+  <p class="note">* This is a parody page. No actual UC will be given.</p>
+</div>
+
+<script>
+  function redeemUC() {
+    alert("⚠️ This is a fake page! Always be cautious online. You are NOT hacked. Just a demo!");
+  }
+</script>
+
+</body>
+</html>
