@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>BGMI Free UC Redeem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 80%;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e03e00;
+        }
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BGMI Free UC Redeem</h1>
+        <p>Enter your BGMI User ID to claim free UC</p>
+        <input type="text" id="userID" placeholder="Enter User ID" required />
+        <br />
+        <button onclick="redeem()">Redeem Now</button>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        function redeem() {
+            const userID = document.getElementById('userID').value.trim();
+            const messageDiv = document.getElementById('message');
+            if (!userID) {
+                messageDiv.style.color = 'red';
+                messageDiv.textContent = 'Please enter a valid User ID!';
+                return;
+            }
+            // Show prank message
+            messageDiv.style.color = '#d9534f';
+            messageDiv.textContent = `Oops! Sorry, no free UC for User ID "${userID}". Better luck next time! 😄`;
+        }
+    </script>
+</body>
+</html>
